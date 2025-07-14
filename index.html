@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌐 Language Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Language Translator</h1>
+
+    <div class="controls">
+      <select id="fromLang"></select>
+      <button onclick="swapLanguages()">🔁</button>
+      <select id="toLang"></select>
+    </div>
+
+    <textarea id="inputText" placeholder="Enter text..."></textarea>
+    <div class="actions">
+      <button onclick="translateText()">Translate</button>
+      <button onclick="playText('input')">🔊</button>
+      <button onclick="copyText('input')">📋</button>
+    </div>
+
+    <textarea id="outputText" placeholder="Translation..." readonly></textarea>
+    <div class="actions">
+      <button onclick="playText('output')">🔊</button>
+      <button onclick="copyText('output')">📋</button>
+    </div>
+
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
